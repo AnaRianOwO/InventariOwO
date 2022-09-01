@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Pruebas</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.12.1/r-2.3.0/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.12.1/r-2.3.0/datatables.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/estilola.css" class="stylesheet">
+   
+    <script>
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+    </script>
+</head>
+<body>
+<div class="containertab">
+    <table id="table_id" class="display">
+        <thead class="thead-dark">
+            <tr>
+                <th>Uwu</th>
+                <th>owo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>uwu</td>
+                <td>owo</td>
+            </tr>
+            <tr>
+                <td>UWU</td>
+                <td>OWO</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="borrar()">borrar</button>
+    <button onclick="modificar()">modificar</button>
+    <button onclick="agregar()">agregar</button>
+    <button onclick="regresar()">regresar</button>
+    <button onclick="bienvenida()">bienvenida tabla</button>
+
+
+    <br>
+    <br>
+    <button onclick="addColumn()">Add column</button>
+
+    <table id="myTable">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    </table>
+
+    <br>
+    <br>
+        
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="../../assets/js/alertas.js"></script>
+    <script>
+        function addColumn() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(-1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = "NEW CELL1";
+            cell2.innerHTML = "NEW CELL2";
+        }
+    </script>
+</div>
+</body>
+</html>

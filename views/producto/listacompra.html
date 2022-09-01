@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hidden {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar..">
+
+<ul id="myUL">
+  <li class="hidden"><a href="#">Ada</a></li>
+  <li class="hidden"><a href="#">Alan</a></li>
+  <li class="hidden"><a href="#">Alberto</a></li>
+  <li class="hidden"><a href="#">Aldo</a></li>
+  <li class="hidden"><a href="#">Alessandro</a></li>
+  <li class="hidden"><a href="#">Alessia</a></li>
+  <li class="hidden"><a href="#">Alex</a></li>
+  <li class="hidden"><a href="#">Alexander</a></li>
+  <li class="hidden"><a href="#">Alexis</a></li>
+  <li class="hidden"><a href="#">Alfonso</a></li>
+  <li class="hidden"><a href="#">Alfredo</a></li>
+  <li class="hidden"><a href="#">Ali</a></li>
+  <li class="hidden"><a href="#">Alvaro</a></li>
+  <li class="hidden"><a href="#">Amalia</a></li>
+  <li class="hidden"><a href="#">Ana</a></li>
+  <li class="hidden"><a href="#">Analia</a></li>
+  <li class="hidden"><a href="#">Anastasia</a></li>
+  <li class="hidden"><a href="#">Andrea</a></li>
+  <li class="hidden"><a href="#">Andrei</a></li>
+  <li class="hidden"><a href="#">Angel</a></li>
+  <li class="hidden"><a href="#">Anibal</a></li>
+  <li class="hidden"><a href="#">Antonio</a></li>
+  <li class="hidden"><a href="#">Arthur</a></li>
+  <li class="hidden"><a href="#">Augusto</a></li>
+</ul>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].classList.remove("hidden");
+    } else {
+      li[i].classList.add("hidden");
+    }
+  }
+}
+</script>
+
+<!--<?php
+
+class masterController{
+
+    function __construct(){
+
+    }
+
+    function redirect($page){
+        switch($page){
+            case 'producto':
+                header('Location: productoController.php');
+                break;
+            case 'venta':
+                header('Location: ventaController.php');
+                break;
+            case 'usuario':
+                header('Location: usuarioController.php');
+                break;
+        }
+    }
+}?>-->
+</body>
+</html>

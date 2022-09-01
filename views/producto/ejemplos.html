@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+<input type="button" value="Cambiar placeholder" onclick="cambiarPlaceholder()">
+<input type="text" id="texto" placeholder="Texto original">
+
+<table>
+    <tr>
+      <td>1</td>
+      <td>2</td> 
+      <td><button>Cambiar</button></td>
+    </tr>
+  </table>
+
+<script type="text/javascript">
+    function cambiarPlaceholder(){
+        var nuevoTexto = prompt("Ingresa el nuevo texto para el placeholder");
+        document.getElementById("texto").placeholder = nuevoTexto;
+    }
+
+    const boton = document.querySelector('button');
+    boton.addEventListener('click', () => {
+        const valor1 = document.querySelector('td');
+        valor1.textContent = '3';
+    });
+</script>
+
+</body>
+
+</html>
