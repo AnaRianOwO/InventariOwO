@@ -8,7 +8,6 @@ Este programa utiliza las siguientes bibliotecas:
 - Sweet alerts.
 - Datatables.
 - Fontawesome.
--
 
 
 Cositas para hacer:
@@ -19,4 +18,5 @@ Cositas para hacer:
 4. Informe en pdf y excel para cada tabla (falta resolver)
 5. Informe excel plantilla (resuelto, falta subir)
 
-
+NOTICIA 10/10/2022
+El software se actualizará para estar mejor en cuanto a optimización y añadir opciones de creación de cuentas.
